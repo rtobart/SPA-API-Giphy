@@ -8,6 +8,10 @@ function App() {
     <div className="App">
       <secciton className="App-content">
         <h2>App Giphy</h2>
+        <div>
+          <input type="text" />
+          <button className="buscardor">🔍</button>
+        </div>
         <Link to="/gif/panda">panda</Link>
         <Link to="/gif/cat">cat</Link>
         <Link to="/gif/dog">dog</Link>
