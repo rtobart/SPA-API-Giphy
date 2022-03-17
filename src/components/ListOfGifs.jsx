@@ -3,7 +3,7 @@ import Gif from './Gif'
 import getGifs from '../services/getGifs'
 import './Gif.css'
 
-export default function ListOfGifs({ params }) {
+function ListOfGifs({ params }) {
     const { keyword } = params
     const [gifs, setGifs] = useState([])
 
@@ -24,6 +24,13 @@ export default function ListOfGifs({ params }) {
             )
         }
     </div>
-
-
 }
+
+function BuscadorGif( { params } ){
+    return <div>
+            <input type="text" />
+            <button className="buscardor">🔍</button>
+        </div>
+}
+
+export {ListOfGifs , BuscadorGif}
